@@ -25,7 +25,7 @@ class Persona(models.Model):
     nombre = models.CharField(max_length=50, null=True)
     celular = models.CharField(max_length=10, null=True)
     rol = models.ForeignKey(Rol, on_delete=models.SET_NULL, blank=True, null=True)
-    salario = models.BigIntegerField(null=True)
+    salario = models.BigIntegerField(null=True, blank=True)
 
     def __str__(self):
         return self.nombre
