@@ -46,6 +46,9 @@ INSTALLED_APPS = [
     'optica'
 ]
 
+ALLOWED_HOSTS = ['solygafas.up.railway.app']
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
