@@ -48,6 +48,11 @@ INSTALLED_APPS = [
 
 ALLOWED_HOSTS = ['solygafas.up.railway.app']
 
+STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+
+CORS_ALLOW_ALL_ORIGINS = True
+CSRF_TRUSTED_ORIGINS = ['https://solygafas.up.railway.app']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
